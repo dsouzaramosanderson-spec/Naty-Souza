@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Naty Souza</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+        <style>
+            body {
+                font-family: 'League Spartan', sans-serif;
+            }
+
+            audio {
+                background-color: chartreuse;
+            }
+
+            .faixa {
+                width: 100%;
+                height: 100px;
+                background-color: chartreuse;
+                color: white;
+                position: fixed;
+                z-index: 1000;
+                top: 0;
+                left: 0;
+            }
+
+            .point {
+                color: white;
+            }
+
+            .image-inicio {
+                width: 650px;
+                border-radius: 64px;
+            }
+
+            .poesia {
+                width: 90%;
+                height: 90px;
+                background-color: #89DD00;
+                color: white;
+                border-radius: 64px;
+            }
+
+            .point-poesia {
+                color: #89DD00;
+            }
+
+            .sobre-o-autor-image {
+                width: 400px;
+                border-radius: 256px;
+            }
+
+            .tabs {
+                display: flex;
+                flex-direction: row;
+                background: #89DD00;
+                padding: 10px 10px 0 10px;
+                gap: 6px;
+            }
+
+            .aba {
+                padding: 12px 24px;
+                color: white;
+                cursor: pointer;
+                border-radius: 8px 8px 0 0;
+                font-size: 15px;
+                transition: all 0.2s;
+                user-select: none;
+            }
+
+            .aba:hover {
+                background: chartreuse;
+                color: white;
+            }
+
+            .aba.ativa {
+                background: chartreuse;
+                color: white;
+                font-weight: bold;
+            }
+
+            .conteudo {
+                padding: 40px;
+                background: white;
+                display: none;
+                min-height: 400px;
+            }
+
+            .conteudo.ativo {
+                display: block;
+            }
+
+            @media (max-width: 768px) {
+
+            .image-inicio {
+                width: 95%;
+                border-radius: 32px;
+            }
+
+            .sobre-o-autor-image {
+                width: 90%;
+                border-radius: 128px;
+            }
+
+            .poesia {
+                width: 95%;
+                height: auto;
+                padding-bottom: 15px;
+            }
+
+            .conteudo {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            h4 {
+                font-size: 18px;
+            }
+
+            .tabs {
+                flex-direction: column;
+            }
+
+            .aba {
+                border-radius: 8px;
+                text-align: center;
+            }
+
+            audio {
+                width: 95%;
+            }
+        }
+        </style>
+    </head>
+    <body>
+
+        <div class="faixa">
+            <center>
+                <h1>
+                    NATY SOUZA
+                </h1>
+            </center>
+        </div>
+
+        <center>
+            <p class="point">
+                .
+            </p>
+        </center>
+
+         <center>
+            <p class="point">
+                .
+            </p>
+        </center>
+
+        <center>
+            <p class="point">
+                .
+            </p>
+        </center>
+
+        <div class="tabs">
+            <div class="aba ativa" onclick="trocar(event, 'pagina1')">Inicio</div>
+            <div class="aba" onclick="trocar(event, 'pagina2')">Poesias</div>
+            <div class="aba" onclick="trocar(event, 'pagina3')">Sobre A Poeta</div>
+        </div>
+
+        <div id="pagina1" class="conteudo ativo">
+            <center><h1>Bem-Vindo(A) Ao Naty Souza.</h1></center>
+            <center><p>Aqui você pode ouvir ou ler poesias.</p></center>
+            <center><h1 class="point">.</h1></center>
+            <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqxskkjJobr3T8t-ZuMPFXaph73YyxXHEbjQ&s" class="image-inicio"></center>
+        </div>
+
+        <div id="pagina2" class="conteudo">
+            <center><div class="poesia"><p class="point-poesia">.</p><h1>Poesia Copa Do Mundo Da FIFA®</h1></div></center>
+            <center><p class="point">.</p></center>
+            <center><h2>Texto</h2></center>
+
+            <center>
+                <h4>
+                    Estamos em 2026 mais um ano de copa e nosso Brasil vai jogar.
+                    Quando o Brasil entrar em campo vamos cantar, pular, torcer
+                    para o Brasil vencer.
+
+                    Todo brasileiro tem que ser parceiro fazer acontecer sem pensar
+                    em dinheiro e sim sendo verdadeiro.
+
+                    Todos torcendo para o Brasil indenpendendo do seu perfil,
+                    torce o idoso, a criança e tambem o juvenil estando calor
+                    ou frio estamos todos lá vibrando para o nosso Brasil.
+
+                    Jogadores entram em campo confiante em fazer daquele jogo
+                    uma partida importante para chegar num final brilhante e
+                    o Brasil seguir adiante.
+
+                    Tambem o narrador Galvão entra como um trovão para narrar
+                    o jogo para todo esse povão.
+
+                    Galvão faz tudo sem treno seu nome é Galvão Bueno,
+                    Brasil forte e varonil, Brasil é nota mil.
+                </h4>
+            </center>
+
+            <center><h2>Audio</h2></center>
+            <center><audio src="CopaDoMundo.MP3" controls></audio></center>
+
+            <center><p class="point">.</p></center>
+
+            <center><div class="poesia"><p class="point-poesia">.</p><h1>Abertura Poesia Programa Silvio Santos, SBT®</h1></div></center>
+            <center><p class="point">.</p></center>
+            <center><h2>Texto</h2></center>
+            <center>
+                <h4>
+                    Vem pra cá
+                    Vem pra cá
+
+                    - Silvio Santos com a
+                    Patricia vai começar
+
+                    - O Domingo mais animado
+                    do canal de televisão
+                    quem não conhece venha conhecer o
+                    canal do SBT®
+
+                    - Quem quer um aviãozinho
+                    sai do sofá e vai decolar
+                    para chegar até lá
+                    e não chegar atrasado naquele
+                    palco mais encantado
+                    tão doce como um mel
+                    agora apresentado pela Patricia Abravanel
+                </h4>
+            </center>
+
+            <center><h2>Audio</h2></center>
+            <center><audio src="SilvioSantosAbertura.MP3" controls></audio></center>
+            
+
+            <center>
+                <div class="poesia">
+                    <p class="point-poesia">.</p>
+                    <h1>Poesia Programa Silvio Santos, SBT®</h1>
+                </div>
+            </center>
+            <center><p class="point">.</p></center>
+            <center><h2>Texto</h2></center>
+
+            <center>
+                <h4>
+                    O Povo sempre pensava quando Silvio santos partisse como ficaria
+                    a alegria aos domingos mas Silvo Santos antes nos presenteou
+                    com a sua filha Patricia que continuou fazendo os domingos
+                    com muito xou para dar continuidade no que o pai mais amou
+                    e foi ali naquele palco que Silvio Santos muito Brilhou.
+
+                    Agora Temos a Patrícia que assumiu o palco com muita competência
+                    alegrando os domingos com toda sua essência.
+
+                    — Tambem foi naquele palco que muita gente com seu Talento
+                    pode crescer e florescer.
+
+                    — Agora com Patrícia Abravanel fazendo bem o seu papel
+                    Ela brilha mais que um Troféu.
+
+                    — O SBT é um Canal de Televisão que só Traz ensinamentos
+                    em Todos os momentos fazendo os eventos brilharem
+                    com firmamento.
+
+                    A família Abravanel Todas reunidas cada um com seu papel
+                    mostrando ao Silvio que Todos serão fiel.
+
+                    — Suas filhas:
+
+                    Renata, Rebeca, Patricia, Daniela, Silvia e Cintia.
+
+                    Como Dizia Silvio Santos:
+                    minha filha nº (1), nº 2, nº 3, nº 4, nº 5, nº 6.
+
+                    Para ele era só numeração pois carregava Todas no coração.
+
+                    — Rebeca com sua simpatia faz o roda roda e Tambem
+                    Trazendo os lançamentos Jequiti para os participantes
+                    voltarem e ali se divertir.
+
+                    — Sem poder de deixar de citar Iris Abravanel,
+                    esposa e viúva de Silvio que sempre Traz muitas novelas,
+                    passando dias praticando Tabelas para sair Tudo
+                    com muita cautéla.
+
+                    — Sempre com muita audiência para os Telespectadores
+                    ficarem em frente a tela apreciando do que vem dos
+                    bastidores Tudo o que vem de valores.
+
+                    Agora falando dessa platéia que Traz essa mulherada
+                    para deixar mais doce de uma marmelada.
+
+                    Quando Patricia entra ficam Todas levantadas,
+                    pois ela entra Toda simpatica e delicada,
+                    e por isso é muito Amada.
+
+                    — Silvio Santos começou sua vida (3) /
+                    Como camelô e com seu esforço e dedicação
+                    fez seu pé de meia mostrando seu Talento
+                    com muita clareira para Toda nação Brasileira.
+
+                    — Criou a Tele Sena que com ela muita gente foi comprando
+                    e no palco foi entrando, para receber o prêmio do Ano
+                    para continuar multiplicando.
+
+                    — A Rede SBT é a rede que mais cresce pois Tem diversão,
+                    notícias, e ali a Patrícia Permanece.
+
+                    — Patrícia ficou na continuidade,
+                    mas ainda o programa continua
+                    como Silvio Santos veria......
+
+                    Trazendo a alegria dos domingos
+                    com a filha Patrícia que não se intimidou
+                    e o programa apresentou.
+
+                    — Tem o show do milhão que continua a Tradição,
+                    falando Tambem do show de calouros que no palco
+                    se apresentam na frente dos jurados com muita coragem
+                    sem quererem levar vantagem.
+
+                    — No Programa Tambem vem (4) /
+
+                    — as câmeras escondidas que é a hora muito divertida.
+
+                    — Depois a Patricia como quadro nada além de um minuto
+                    chamando o Sorteado que vem todo ilustrado
+                    e ali é iluminado, para fazer as prosas com Toda Prosa.
+
+                    — Silvio Santos lá de baixo ele começou depois
+                    muita gente ele ajudou, por isso SBT é a rede
+                    que mais cresce porque Jesus Abençoou.
+
+                    — Não Da para citar Todos os nomes da rede SBT
+                    das amizades que Silvio conquistou,
+                    Todos tem seu papel que para cada um Deus mandou.
+
+                    — Tanto Silvio Santos como sua filha Patricia
+                    sempre Tratou bem os convidados sem nem uma irônia
+                    pois dali Todos se saiam com alegria.
+
+                    — Patricia com sua experiência Toca o Programa
+                    mostrando para seu pai Tudo o que ele merecia,
+                    fazendo com que cada domingo vai como ele queria
+                    que acontecia.
+
+                    — O Programa Silvio Santos (5) /
+                    Jamais poderia Sair do ar mas foi assim
+                    como coragem da Patricia para ela honrar,
+                    e O programa prolongar Contando com o auditorio
+                    para com ela Colaborar.
+
+                    — Silvio Santos lá de cima está acompanhando
+                    o programa da sua filha Patrícia que ali ficou
+                    comprometida depois da sua Partida.
+
+                    — As famílias quando ligam a T.V já vão
+                    para frente do Painel para assistir SBT
+                    O canal que o povo não deixa de ser fiel,
+                    e não Saberiam como seria sem a família Abravanel.
+
+                    - Aos Domingos lá vem o celso
+                    apresentando O Torta na cara
+                    vem convidado de Todos os lugares e
+                    ali jogam sempre com seus pares,
+                    o Celso fazendo as perguntas, e quem
+                    errava a torta na cara enterrava
+                    Tudo muito real, apresentado no
+                    Domingo Legal
+
+                    - na sequencia lá vem o comprar
+                    é bom levar é melhor, ali os participantes
+                    com as perguntas ficam Tenso, mas
+                    relaxam diante do celso com seu jeito
+                    Amoroso e com seu carinho intenso
+                    naquele palco radiante se sente muito
+                    confiante.
+
+                    — Dando Continuidade, falando de Luiz
+                    Ricardo que lá vem com a Telecena
+                    Trazendo as meninas, que entram em cena
+                    Tirando as bolas do globo e com
+                    o numero na mão o que é sorteado
+                    acelera o coração.
+
+                    — Agora chamando Rebeca para apresentar
+                    O roda roda que chega Toda na moda
+                    Quem Tem mais sorte ganha um bom
+                    dinheiro e sai como um cavalheiro
+
+                    — De Segunda a Sexta
+                    Temos marcão do Povo
+                    que vem com as notícias,
+                    acidentes, femicidios e outros,
+                    Trazendo Tudo no Ato
+                    com a fraze que ele cita:
+                    não passo manteiga no bigode do gato
+
+                    — Soá vem as novelas
+                    A Tarde e a noite Tem as novelas que
+                    são Tão Divertidas que assistimos
+                    Tanto na Sala como na janela,
+                    são histórias que deixam Todos a
+                    frente da Tela
+                    Tem novelas infantil que deixa a
+                    criançada Toda desembaraçada ocupando
+                    seus Tempo sem fazer bagunçada
+                    
+                    — Falando das novelas da noite que
+                    vem com muitos mistérios, são
+                    novelas que é exibida para Todos
+                    assistirem com muita maravilha pois
+                    foi feita para Toda família.
+
+                    — nesse canal de Televisão só
+                    tem coisas sadias que Todo povo
+                    pode ver dia a dia com muitos encantos
+                    pois foi criado pelo nosso saudoso
+                    Silvio Santos.
+
+                    Ratinho
+
+                    — Todos os dias na sua Telinha
+                    Tem O programa do Ratinho, é um
+                    programa que Todos gostam de assistir
+                    Tanto o novo como o velhinho, porque
+                    Ratinho mostra a verdade e não
+                    defende o Colarinho.
+                    fala do seu Jeito Defendendo tudo O
+                    que é de direito.
+
+                    — Ratinho Tambem deverte com o quadro
+                    Dez ou mil que ali se apresentam
+                    Tanto o adulto como o Juvenil os
+                    que ganham a nota mil é porque
+                    brilham mais que um bombril.
+
+                    — Tambem Tem o chuveirao que se
+                    nao cantar nada leva uma molhada
+
+                    — Falando do marquito que faz o
+                    melhor do esquisito pulando Pra
+                    lá e pra cá igual um cabrito
+                    mas marquito com seu progresso
+                    faz muito susesso.
+
+                    — O Ratinho faz por merecer
+                    por isso foi escolhido pelo SBT
+
+                    — SBT é o canal que é assistido por Todos
+                    cantos pelo carinho que o povo tem por Silvio Santos
+                    e agora Patricia fazendo seu papel com
+                    Toda sua família Abravanel
+                </h4>
+            </center>
+
+            <center><h2>Audio</h2></center>
+            <center><audio src="SilvioSantos.MP3" controls></audio></center>
+        </div>
+
+        <div id="pagina3" class="conteudo">
+            <center><img src="SobreOAutor.PNG" class="sobre-o-autor-image"></center>
+            <center><h2>Nome: Natalina De Souza</h2></center>
+            <center><h2>Data De Nascimento: 29/09/1963</h2></center>
+            <center><h2>Local Do Nascimento: Criciúma - SC</h2></center>
+
+        </div>
+
+        <script>
+            function trocar(event, id) {
+                document.querySelectorAll('.aba').forEach(a => a.classList.remove('ativa'));
+                document.querySelectorAll('.conteudo').forEach(c => c.classList.remove('ativo'));
+
+                document.getElementById(id).classList.add('ativo');
+                event.target.classList.add('ativa');
+            }
+        </script>
+    </body>
+</html>
